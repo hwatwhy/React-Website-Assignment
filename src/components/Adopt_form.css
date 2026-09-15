@@ -1,0 +1,179 @@
+/* Container for the form */
+.adopt-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+/* Heading for the form */
+.adopt-form-heading {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Styling for form fields */
+.adopt-form-field {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.adopt-field-label {
+  display: block;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 8px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Input fields styling */
+.adopt-input-field {
+  width: 92%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin: 10px;
+}
+
+/* Styling for the textarea */
+.adopt-textarea-field {
+  resize: vertical;
+}
+
+/* Button styling */
+.adopt-submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: darkblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.adopt-submit-btn:hover {
+  opacity: 0.33;
+}
+
+.error-text {
+  color: red;
+}
+
+/* Card icons styling */
+.card-icons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card-icon {
+  height: 40px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.adopt-title {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.inputBox {
+  margin: 20px;
+}
+
+/* Flexbox Container for Left and Right Form Sections */
+.adoptform-content {
+  display: flex;
+  flex-wrap: wrap;  /* Allows content to wrap on smaller screens */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Left Form Section */
+.form-left, .form-right {
+  width: 48%;  /* Each section takes up 48% of the container */
+}
+
+/* Flex container for Exp Year and CVV fields */
+.exp-cvv-container {
+  display: flex;            /* Align the child elements side by side */
+  flex-wrap: wrap;         /* Allow wrapping for smaller screens */
+
+}
+
+/* Styling for each field box */
+.inputBox {
+  flex: 1 1;        /* Each input box takes 45% of the container */
+  box-sizing: border-box;
+  margin-top: 0px; 
+}
+
+.inputBox1 {
+  flex: 1 1;        /* Each input box takes 45% of the container */
+  box-sizing: border-box;
+  margin-top: -10px;
+}
+
+.inputBox2{
+  flex: 1 1;        /* Each input box takes 45% of the container */
+  box-sizing: border-box;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.adopt-field-label1{
+  display: block;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: center; 
+}
+
+.adopt-container{ 
+background-color: #f4f4f4;  /* Light background color */
+padding: 20px;  /* Add space inside the div */
+border-radius: 8px;  /* Round the corners */
+max-width: 300px;  /* Limit the width */
+margin: 20px auto;  /* Center the div */
+border: 1px solid #ddd;
+transition: transform 0.2s;
+display: flex;  /* Use flexbox to position elements */
+flex-direction: column;  /* Ensure children stack vertically */
+justify-content: center; /* Horizontally center the content */
+align-items: center; /* Vertically center the content */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adopt-container img{
+  width: 300px;  /* Ensure the image fits within the container */
+  max-height: 200px;
+  border-radius: 8px;  /* Round the corners of the image */
+}
+
+.adopt-p{
+  font-size: large;
+}
+
+.adopt-main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.adopt-form1{
+  width: 48%;
+  margin-top: 100px;
+}

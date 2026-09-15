@@ -1,0 +1,381 @@
+/* Button styling */
+.volunteer-submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: darkblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.volunteer-form-container{
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-form-heading{
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+
+.volunteer-field-label{
+  display: block;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 8px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.volunteer-input-field {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin: 10px;
+}
+
+.volunter-title{
+  text-align: center;
+}
+
+.volunter-content{
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.volunter-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+  color: darkblue;
+  text-align: center;
+}
+
+.volunter-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.volunter-content ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+ 
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #c6f5fb;
+}
+
+.hero-section4 {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hero-content4{
+  position: absolute;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-button4 {
+  padding: 10px;
+  background-color: darkblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 130px;
+  
+}
+
+.hero-image4{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+
+.hero4{
+  color: white;
+  font-size: 30px;
+}
+
+.volunteer-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap as needed */
+  width: 550px;
+  margin-left: 30px;
+}
+
+.volunteer-radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.error-text {
+  color: red;
+}
+
+.volunteer-title{
+  margin-left: 30px;
+}
+
+.volunteer-form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between form rows */
+}
+
+.volunteer-form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Space between fields */
+  margin: 20px;
+  width: 700px;
+  
+}
+
+.volunteer-form-field {
+  flex: 1; /* Allow each field to take equal width */
+  display: flex;
+  flex-direction: column;
+}
+
+.volunteer-input-field {
+  width: 100%; /* Make the input fields stretch to the container width */
+  padding: 10px;
+}
+
+.volunteer-field-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+  width: 100%;
+}
+
+.volunteer-field-label1{
+  margin-left: 30px;
+  margin-top: -20px;
+}
+
+.volunteer-form-dates {
+  display: flex;
+  gap: 20px; /* Space between the fields */
+  margin: 20px;
+}
+
+.volunteer-form-field {
+  flex: 1; /* Allows both fields to take equal width */
+}
+
+.dob-container {
+  display: flex; /* Align items in a row */
+  gap: 10px; /* Adds space between the elements */
+  align-items: center; /* Vertically aligns the elements */
+}
+
+.volunteer-input-field2 {
+  width: 88px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+/* Responsive styling */
+
+@media screen and (max-width: 768px) {
+  /* Ensure form fields stack vertically */
+  .volunteer-form-container {
+    padding: 10px;
+    margin: 15px;
+  }
+
+  .volunteer-form-heading {
+    font-size: 20px;
+  }
+
+  .volunteer-field-label {
+    font-size: 14px;
+  }
+
+  .volunteer-input-field {
+    width: 100%; /* Ensure input fields take up full width */
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .volunteer-radio-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .volunteer-radio-option {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .volunteer-form-dates {
+    flex-direction: column;
+  }
+
+  /* Stack form fields on small screens */
+  .volunteer-form-row {
+    flex-direction: column;  /* Change from row to column */
+    width: 100%;  /* Ensure fields take up full width */
+    gap: 10px; /* Add spacing between fields */
+  }
+
+  /* Adjust width and spacing of individual fields */
+  .volunteer-form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .volunter-content h2 {
+    font-size: 20px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  .hero-image4 {
+    height: 250px;
+  }
+
+  .hero-button4 {
+    width: 120px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .volunteer-submit-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .volunteer-form-container {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .volunteer-form-heading {
+    font-size: 18px;
+  }
+
+  .volunteer-field-label {
+    font-size: 14px;
+  }
+
+  .volunteer-input-field {
+    width: 100%; /* Make sure it takes up full width */
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  /* Stack fields vertically in a column on smaller screens */
+  .volunteer-radio-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .volunteer-form-dates {
+    flex-direction: column;
+  }
+
+  .volunteer-form-row {
+    flex-direction: column; /* Stack fields */
+    gap: 10px; /* Add space between fields */
+  }
+
+  .volunteer-form-field {
+    width: 100%; /* Ensure field is full width */
+  }
+
+  .volunter-content h2 {
+    font-size: 18px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  .hero-image4 {
+    height: 200px;
+  }
+
+  .volunteer-submit-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .hero-button4 {
+    width: 100px;
+    padding: 6px;
+    font-size: 10px;
+  }
+}

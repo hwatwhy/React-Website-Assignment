@@ -1,0 +1,65 @@
+.Login {
+  background-color: #f9f9f9;
+  display: flex;
+  text-align: center;
+  width: 470px;
+  height: 400px;
+  justify-content: center;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.Login .FormGroup {
+  text-align: left;
+}
+.Login .form-control {
+  height: 30px;
+  width: 320px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.Login .form-group {
+  display: flex;
+  align-items: center;
+}
+
+.Login .form-label {
+  margin-right: 10px;
+  width: 100px;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.forgot-password {
+  margin-left: auto;
+  color: black;
+  text-decoration: underline;
+}
+.text{
+  color: black;
+}
+.sign-up{
+  padding-top: 20px;
+}
+.title1{
+  padding-bottom: 30px;
+  color: black;
+}
+
+.error-text {
+  color: red; /* Error message color */
+  margin-left: 10px; /* Adds space between the input and the error message */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,407 @@
+.hero {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.hero-image1 {
+  width: 100%;
+  height: 450px;
+}
+
+.hero-text {
+  position: absolute;
+  margin: 40px;
+  top: 30%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  font-size: 40px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* Add space between the text and the button */
+  font-size: 30px;
+  width: 1000px;
+}
+
+.hero-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: darkblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 120px;
+}
+
+.hero-button:hover {
+  opacity: 0.33;
+}
+
+.services-title,
+.services1 {
+  grid-column: 1 / -1;
+}
+
+.services-title {
+  text-align: center;
+  color: black;
+}
+
+.services-title1 {
+  color: black;
+}
+
+.services {
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding-top: 20px;
+  width: fit-content;
+}
+
+.services-items {
+  background-color: white;
+  /* Light background */
+  border: 1px solid #ccc;
+  /* Subtle border */
+  border-radius: 5px;
+  /* Rounded corners */
+  padding: 10px;
+  /* Inner spacing */
+  margin-bottom: 10px;
+  /* Space between service items */
+  transition: transform 0.2s;
+  /* Smooth transition for hover */
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  width: 450px;
+
+}
+
+.services-items:hover {
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
+}
+
+h3 {
+  color: darkblue;
+}
+
+.volunteer,
+.donate,
+.community,
+.mission,
+.petcare,
+.adopt {
+  width: 200px;
+}
+
+.about-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.about-section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+
+.working {
+  padding: 20px;
+  /* Add some padding around the working container */
+  margin-bottom: 20px;
+
+}
+
+.working-title {
+  margin-bottom: 10px;
+  /* Space below the title */
+  text-align: center;
+
+}
+
+.working-content {
+  margin-bottom: 20px;
+  /* Space below the content paragraph */
+  text-align: center;
+  font-weight: bold;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.step1 {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 420px;
+  text-align: center;
+  padding: 10px;
+  height: 270px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.step1:hover {
+  transform: scale(1.05);
+}
+
+.appointment,
+.show {
+  width: 150px;
+  height: auto;
+}
+
+.browse {
+  width: 150px;
+  height: auto;
+  padding: 10px;
+}
+
+.hero-1{
+  color: white;
+}
+
+.step2{
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 700px;
+  text-align: center;
+  padding: 10px;
+  height: 270px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.step2:hover:hover {
+  transform: scale(1.05);
+}
+
+.steps-container1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/* App.css */
+
+.stats-container {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.stats-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: -20px;
+}
+
+.stats-content {
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.stats-wheel {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base styles remain the same */
+
+/* Responsive adjustments for screens max-width: 768px (Tablets, smaller desktops) */
+@media screen and (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-image1 {
+    height: 350px; /* Adjust height for smaller screens */
+  }
+
+  .hero-text {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px; /* Smaller font size */
+    width: 90%; /* Adjust text container width */
+  }
+
+  .hero-content {
+    flex-direction: column; /* Stack button and text vertically */
+    font-size: 25px; /* Adjust font size */
+    width: 100%;
+  }
+
+  .hero-button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr; /* Stack services vertically */
+    width: 100%;
+  }
+
+  .services-items {
+    width: 100%; /* Ensure services items take full width */
+    padding: 20px;
+  }
+
+  .working {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .working-title,
+  .working-content {
+    text-align: center;
+  }
+
+  .steps-container {
+    flex-direction: column; /* Stack steps vertically */
+    gap: 10px;
+    align-items: center;
+  }
+
+  .step1,
+  .step2 {
+    width: 100%; /* Full width for steps on smaller screens */
+    height: auto;
+    padding: 20px;
+  }
+
+  .stats-container {
+    flex-direction: column; /* Stack stats vertically */
+    width: 100%;
+    align-items: center;
+  }
+
+  .stats-title,
+  .stats-content {
+    text-align: center; /* Center align stats text */
+  }
+
+  .stats-wheel {
+    width: 120px;
+    height: 120px; /* Adjust stats wheel size */
+  }
+}
+
+/* Responsive adjustments for screens max-width: 480px (Mobile devices) */
+@media screen and (max-width: 480px) {
+  .hero-image1 {
+    height: 300px; /* Adjust height further for smaller screens */
+  }
+
+  .hero-text {
+    font-size: 24px; /* Further reduce font size */
+    width: 95%; /* Maximize text width */
+    margin: 20px 0; /* Reduce margin for mobile screens */
+  }
+
+  .hero-content {
+    flex-direction: column;
+    font-size: 20px; /* Smaller text on mobile */
+    width: 100%;
+    gap: 10px; /* Smaller gap between text and button */
+  }
+
+  .hero-button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr; /* Stack services in one column */
+  }
+
+  .services-items {
+    width: 100%; /* Full width of services items */
+    padding: 15px;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .step1,
+  .step2 {
+    width: 100%; /* Full width for mobile */
+    height: auto;
+    padding: 15px;
+  }
+
+  .stats-container {
+    flex-direction: column; /* Stack stats vertically */
+    width: 100%;
+    align-items: center;
+  }
+
+  .stats-wheel {
+    width: 100px; /* Adjust wheel size for smaller screens */
+    height: 100px;
+  }
+
+  .working {
+    padding: 15px;
+  }
+
+  .working-title,
+  .working-content {
+    text-align: center;
+  }
+
+  .stats-title,
+  .stats-content {
+    text-align: center;
+  }
+}
+
+

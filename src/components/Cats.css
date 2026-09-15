@@ -1,0 +1,56 @@
+.showlist {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center the items */
+  gap: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.anmimal-container {
+  margin: 20px; /* Space between images */
+  padding: 20px;
+}
+
+.image {
+  width: 350px; /* Desired width */
+  height: 300px; /* Desired height */
+  border-radius: 8px;
+}
+
+.animal-title{
+  text-align: center;
+  margin: 20px;
+}
+
+.animal-item {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.animal-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.animal-item:hover .animal-details {
+  opacity: 1;
+}
+
+.animal-item:hover .image {
+  opacity: 0.3;
+}

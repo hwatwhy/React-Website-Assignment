@@ -1,0 +1,250 @@
+/* NavBar Container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: darkblue;
+  flex-wrap: wrap;
+}
+
+
+/* Logo styling */
+.logo {
+  width: 150px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.logo:hover {
+  opacity: 0.33;
+}
+
+/* Menu container */
+.menuitem {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin: 0;
+  gap: 30px;
+}
+
+/* Unordered list styling for menu */
+.menuitem ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Styling for links in the menu */
+.menuitem a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menuitem a:hover {
+  opacity: 0.33;
+}
+
+/* Styling for list items in the menu */
+.menuitem li {
+  position: relative;
+}
+
+/* Styling for login link */
+.login-link {
+  margin-left: auto;
+}
+
+.login-link a {
+  color: white;
+  font-weight: bold;
+}
+
+
+/* Dropdown styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkblue;
+  min-width: 150px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown link styling */
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+/* Change background color of links on hover */
+.dropdown-content a:hover {
+  background-color: transparent;
+}
+
+/* Container for user name and dropdown */
+.user-dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the user name that displays when logged in */
+.user-name {
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  padding: 8px 12px;
+  background-color: darkblue;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+/* Hover effect for user name */
+.user-name:hover {
+  opacity: 0.33;
+}
+
+/* Dropdown menu container */
+.user-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: darkblue;
+  border-radius: 5px;
+  min-width: 150px;
+  padding: 5px;
+  display: none;
+  z-index: 1;
+}
+
+/* Show dropdown on hover of the user-dropdown-container */
+.user-dropdown-container:hover .user-dropdown {
+  display: block;
+
+}
+
+/* Style for each item in the dropdown */
+.dashboard-option,
+.logout-option {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Hover effect for dashboard and logout options */
+.dashboard-option:hover,
+.logout-option:hover {
+  background-color: transparent;
+}
+
+/* Style for the Login Link when user is not logged in */
+.login-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: darkblue;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for login link */
+.login-link a:hover {
+  color: white;
+}
+
+.dropdown-link:hover {
+  opacity: 0.33;
+}
+
+.logout-option:hover {
+  opacity: 0.33;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menuitem {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .menuitem ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .menuitem li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .logo {
+    width: 120px;
+    margin-left: 0;
+  }
+
+  .login-link {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .dropdown-content {
+    min-width: 120px;
+  }
+
+  .dropdown-content a {
+    padding: 8px;
+  }
+}
+
+/* For smaller devices (up to 480px wide) */
+@media (max-width: 480px) {
+  .logo {
+    width: 100px;
+  }
+
+  .menuitem ul {
+    gap: 10px;
+  }
+
+  .menuitem li {
+    font-size: 14px;
+  }
+
+  .user-name {
+    font-size: 12px;
+  }
+
+  .dropdown-content a {
+    padding: 6px;
+  }
+}

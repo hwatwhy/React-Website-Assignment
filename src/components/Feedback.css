@@ -1,0 +1,74 @@
+#adopter-reviews {
+  width: 500px;
+  height: 380px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card {
+  padding: 20px;
+}
+
+.testimonial-card img {
+  width: 100%;
+  border-radius: 10px;
+  max-width: 250px;
+  max-height: 150px;
+  margin: 0 auto;
+}
+
+.testimonial-card blockquote {
+  font-style: arial;
+  margin: 10px 0;
+}
+
+.testimonial-card cite {
+  font-weight: bold;
+}
+.rating {
+  margin-top: 5px;
+  color: gold;
+}
+
+/* Indicator Dots */
+.indicator-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.active-dot {
+  background-color: darkblue;
+}
+/* Slide-in animation */
+.slide-in {
+  animation: slide-in 1.5s ease;
+}
+
+@keyframes slide-in {
+  from {
+    
+    transform: translateX(10px);
+  }
+  to {
+    
+    transform: translateX(0);
+  }
+}
+
+

@@ -1,0 +1,202 @@
+.contact-us-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-us-form-section {
+  flex: 1 1 400px;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  
+}
+
+.contact-us-form-section h2 {
+  text-align: center;
+}
+
+.contact-us-form-group {
+  margin-bottom: 15px;
+}
+
+.contact-us-form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-us-form-group input,
+.contact-us-form-group textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#message {
+  height: 100px;
+}
+
+button:hover {
+  opacity: 0.33;
+}
+
+.contact-us-map-section {
+  flex: 1 1 600px;
+  max-width: 600px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-us-map-container {
+  height: 440px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.contact-us-map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-us-hero {
+  position: relative;
+  text-align: center;
+  
+}
+
+.contact-us-hero-image {
+  width: 100%;
+  height: 450px; 
+  opacity: 0.7;
+}
+
+.contact-us-hero-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  text-align: center; /* Center the text */
+  color: white;
+  font-size: 40px;
+}
+
+.contact-us-faq-title {
+  text-align: center;
+}
+
+.contact-us-faq {
+  background-color: white;
+  width: 1000px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.contact-us-faq-item {
+  border-bottom: 1px solid #ccc;
+  background-color: darkblue;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 1px;
+}
+
+.contact-us-faq-question {
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  transition: color 0.3s;
+  margin: 20px;
+}
+
+.contact-us-faq-question:hover {
+  opacity: 0.33;
+}
+
+.contact-us-faq-answer {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.error-text{
+  margin-left: 10px;
+  color: blue;
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-us-form-section,
+  .contact-us-map-section {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .contact-us-form-group input,
+  .contact-us-form-group textarea {
+    width: 100%;
+  }
+
+  .contact-us-hero-text {
+    font-size: 30px; /* Adjust font size for smaller screens */
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .contact-us-faq {
+    width: 90%;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .contact-us-hero-text {
+    font-size: 24px; /* Further adjust font size for very small screens */
+  }
+
+  .contact-us-map-container {
+    height: 300px; /* Adjust map height for small screens */
+  }
+
+  .contact-us-faq {
+    width: 100%;
+  }
+
+  .contact-us-form-group input,
+  .contact-us-form-group textarea {
+    width: 100%;
+    padding: 8px;
+  }
+}

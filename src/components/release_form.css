@@ -1,0 +1,158 @@
+/* Container for the release form */
+.release-form-container {
+  width: 100%;
+  max-width: 800px; /* Limits max width to 500px */
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Heading for the form */
+.release-form-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* General form layout */
+.release-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px;
+}
+
+/* Form field container */
+.release-form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Label styling */
+.release-field-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+/* Input and select dropdown styling */
+.release-input-field {
+  width: 100%; /* Ensures full width */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+  box-sizing: border-box; /* Includes padding in width */
+  margin-top: 8px;
+}
+
+/* Submit button styling */
+.release-submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+/* Submit button hover effect */
+.release-submit-btn:hover {
+  opacity: 0.8;
+}
+
+/* Add this to your release_form.css file */
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.release-title{
+  text-align: center;
+}
+
+.release-content{
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.release-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+  color: darkblue;
+  text-align: center;
+}
+
+.release-content ol {
+  padding-left: 20px;
+}
+
+.release-content ol li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  
+}
+
+.release-form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+  
+}
+
+.release-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.release-form-left,
+.release-form-right {
+  width: 48%; /* Adjust the width of left and right sections */
+}
+
+.release-form-actions {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Make the button span across the form */
+}
+
+.release-submit-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: darkblue; /* Adjust the color to fit your theme */
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.release-submit-button:hover {
+  opacity: 0.33;
+}
+
+
+
+
+
+
+

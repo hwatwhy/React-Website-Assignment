@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100%;
+  /* Full height for the body */
+  margin: 0;
+  /* Remove default margin */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.reserved {
+  display: flex;
+  justify-content: space-between;
+  /* Space between the two elements */
+  align-items: center;
+  /* Center items vertically */
+  padding: 20px;
+  /* Add some padding */
+  background-color: darkblue;
+  /* Background color for the footer */
+}
+
+.copyright {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+}
+
+.design {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+}
+
+footer {
+  padding: 20px;
+  /* Add some padding */
+  text-align: center;
+  /* Center the text */
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.animal-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  width: 200px;
+  text-align: center;
+}
+
+.animal-card img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}

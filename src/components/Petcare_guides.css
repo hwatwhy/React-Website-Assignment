@@ -1,0 +1,165 @@
+.hero2 {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image2{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.hero-text1 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.services2 {
+  display: flex; 
+  flex-direction: column; /* Stack all sections vertically */
+  align-items: center; /* Center items horizontally */
+  
+}
+.services3 {
+  text-align: center; /* Center text in services1 */
+  
+}
+.services-title {
+  text-align: center;
+  color: black
+}
+
+.services-intro {
+  text-align: center;
+  color: black;
+}
+
+.services-container {
+  display: flex; /* Use flexbox for the service items */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items horizontally */
+  gap: 40px; /* Add space between items */
+  padding: 40px;
+}
+
+.services-item {
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the image and heading */
+  text-align: left; /* Left-aligns text by default */
+  transition: transform 0.2s; 
+  cursor: pointer;
+  width: fit-content;
+}
+
+.services-item h3 {
+  text-align: center; /* Center-aligns the heading */
+}
+
+.services-item ul {
+  width: 100%; /* Allows the list to take up the full width */
+  padding-left: 0;
+  list-style: none;
+}
+
+.li-format {
+  text-align: left;
+}
+
+
+.services-item:hover {
+  transform: scale(1.05); 
+}
+
+.call-to-action {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white ;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.call-to-action:hover {
+  transform: scale(1.05); 
+}
+
+.health,.safety,.mental,.petcare{
+  width: 150px;
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .hero2 {
+    flex-direction: column; /* Stack the hero section vertically */
+    align-items: center;
+  }
+
+  .hero-image2 {
+    height: 300px; /* Reduce the image height for smaller screens */
+  }
+
+  .hero-text1 {
+    font-size: 24px; /* Reduce text size for better readability */
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .services-container {
+    flex-direction: column; /* Stack service items vertically */
+    gap: 20px; /* Reduce gap between items */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .services-item {
+    width: 100%; /* Allow services items to take up full width */
+    padding: 15px; /* Reduce padding for smaller screens */
+    text-align: center; /* Center text for better alignment */
+  }
+
+  .call-to-action {
+    width: 100%; /* Make the call-to-action section full width */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .health, .safety, .mental, .petcare {
+    width: 120px; /* Reduce width of the icons */
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .hero-image2 {
+    height: 250px; /* Further reduce image height for very small screens */
+  }
+
+  .hero-text1 {
+    font-size: 20px; /* Further reduce font size */
+  }
+
+  .services-item {
+    width: 100%; /* Ensure services items take full width */
+    padding: 10px; /* Even smaller padding */
+  }
+
+  .call-to-action {
+    padding: 10px; /* Reduce padding for very small screens */
+  }
+
+  .health, .safety, .mental, .petcare {
+    width: 100px; /* Further reduce width of icons */
+  }
+}

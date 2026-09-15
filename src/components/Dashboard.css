@@ -1,0 +1,141 @@
+.Dashboard-content{
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+  color: darkblue;
+  text-align: center;
+  
+}
+
+.dashboard-title{
+  text-align: center;
+}
+
+.dashboard-title1{
+  color: black;
+}
+
+.dashboard-img{
+  width: 300px;  /* Ensure the image fits within the container */
+  height: 250px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.dashboard-p{
+  font-size: large;
+  justify-content: center;
+  padding: 20px ;
+}
+
+.dashboard-container{
+  display: flex;            /* Align items in a row */
+  align-items: flex-start;   /* Align items at the start of the container */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container styling */
+.dashvolunter {
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title styling */
+.dashvolenter-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: darkblue;
+}
+
+/* Content styling */
+.dashvolunter-content {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if content overflows */
+  gap: 16px; /* Spacing between boxes */
+  justify-content: center; /* Adjusts spacing between items */
+  align-items: center; 
+  margin-left: 20px;
+  
+}
+
+/* Ordered list styling */
+.dashvolunter-content ol {
+  display: flex; /* Converts list into a row */
+  gap: 10px; /* Adds spacing between list items */
+  flex-direction: column;
+  list-style: decimal; /* Ensures numbers are shown */
+}
+
+/* Individual volunteer item styling */
+.dashvolunter-content li {
+  display: flex; /* Make items within the row display horizontally */
+  gap: 15px;
+  align-items: center; /* Align items vertically */
+  padding: 10px 0px;
+  text-align: center;
+
+}
+
+.dashvolunter-content li:last-child {
+  border-bottom: none;
+}
+
+/* Text styling within each volunteer item */
+.dashvolunter-content p {
+  margin: 5px 0;
+  display: flex;
+  
+}
+
+.dashvolunter-content p strong {
+  color: black;
+  margin-right: 8px; /* Add spacing between label and value */
+  white-space: nowrap; /* Prevent line breaks for labels */
+}
+
+/* No volunteer details message */
+.dashvolunter-content p {
+  color: black;
+  display: flex;
+  margin-top: 20px;
+}
+
+.dash-pp{
+  margin-top: 50px;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.dash-ppp {
+  font-size: larger;
+  font-weight: bold;
+  text-align: center; /* Centers text horizontally */
+  margin: 0 auto; /* Centers the block element itself */
+}
+
+
+
+
+
+
+
+

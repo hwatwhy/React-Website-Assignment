@@ -1,0 +1,197 @@
+.footer-container {
+  background-color: darkblue;
+  height: 50%;
+  padding: 20px;
+  color: white;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow items to wrap in small screens */
+}
+
+.container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  
+}
+
+.container2 nav {
+  display: flex;
+  flex-wrap: wrap; /* Allow links to wrap to the next line */
+  justify-content: center; /* Center the links horizontally */
+  
+  width: 100%;
+}
+
+.container2 nav a {
+  margin: 10px; /* Space around each link */
+  text-decoration: none; /* Remove underline from links */
+  flex: 1 1 calc(33.33% - 20px); /* Each link takes up 1/3 of the row, minus margin */
+  text-align: center; /* Center the text within each link */
+  color: white;
+}
+
+.container2 nav a:last-child {
+  margin-bottom: 0; /* Remove margin from the last link */
+}
+
+.container2 nav :hover{
+  opacity: 0.33;
+}
+
+.container3 {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+ 
+  margin-left: 10px;
+}
+
+
+.contactus p {
+  display: flex; 
+  align-items: center; 
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.contactus p .icon{
+  margin-right: 10px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items:center;
+  color: white;
+}
+
+.icon {
+  font-size: 20px;
+  color: white;
+  display: flex;
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.photo:hover {
+  opacity: 0.33;
+}
+
+.text1 {
+  margin: 0;
+}
+
+.title{
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px
+}
+
+.reserved {
+  display: flex;
+  justify-content: space-between;
+  /* Space between the two elements */
+  align-items: center;
+  /* Center items vertically */
+  padding: 20px;
+  /* Add some padding */
+  width: 100%;
+}
+
+.copyright {
+  margin: 0;
+  /* Remove default margin */
+  color: white;
+}
+
+.design {
+  margin: 0;
+  /* Remove default margin */
+  text-align: right;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .container2 nav a {
+    flex: 1 1 100%; /* Each link takes full width on small screens */
+  }
+
+  .container3 .link {
+    flex-direction: row; /* Stack social media items horizontally on small screens */
+    justify-content: center;
+  }
+
+  .container3 .link a {
+    margin: 5px 10px;
+  }
+
+  .contactus p {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .container2 .title,
+  .container3 .title {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 28px; /* Increase icon size for visibility on smaller screens */
+  }
+
+  .photo .icon {
+    font-size: 24px; /* Adjust social media icon size */
+  }
+}
+
+/* Small screens and below (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 15px;
+  }
+
+  .container1 {
+    gap: 15px; /* Adjust gap between elements */
+  }
+
+  .container2 nav a {
+    font-size: 14px;
+  }
+
+  .container2 .title,
+  .container3 .title {
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 22px; /* Reduce icon size on smaller screens */
+  }
+
+  .photo .icon {
+    font-size: 20px; /* Smaller social media icon */
+  }
+}
